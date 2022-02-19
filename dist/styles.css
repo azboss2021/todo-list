@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ececec;
+    font-family: Arial;
+    display: flex;
+}
+
+button {
+    cursor: pointer;
+    font-family: Arial;
+}
+
+#content {
+    font-size: 1.5rem;
+    min-height: 100%;
+    margin: auto;
+}
+
+#project_panel {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 300px;
+    padding: 3rem 2rem 1rem 1rem;
+    min-height: 100%;
+    border-right: 1px solid white;
+}
+
+#list_area {
+    padding: 3rem 1rem 1rem 2rem;
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+
+.list_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.project {
+    display: flex;
+    color: lightgray;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.project_title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.settings {
+    display: flex;
+    justify-content: center;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    height: 2rem;
+    margin-right: .5rem;
+}
+
+.list_date {
+    margin-left: auto;
+    min-width: 150px;
+    max-width: 150px;
+}
+
+.list_description {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 1rem;
+}
+
+.active_project {
+    color: black;
+}
+
+.new_item {
+    background: lightskyblue;
+    border: none;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#new_modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 600px;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+#new_modal_input {
+    width: 100%;
+    font-size: 1.25rem;
+    margin-top: .25rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+}
+
+#new_modal_submit {
+    background: green;
+    border: none;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
